@@ -10,4 +10,5 @@ O que foi aprendido neste projeto:
 Acesse o projeto: https://meuprimeirositereact.netlify.app/
 
 Utilizando a pesquisa dinâmica:
+
 <img src="https://i.imgur.com/9t1xmk1.gif" width="500px">
