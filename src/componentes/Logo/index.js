@@ -3,18 +3,24 @@ import styled from 'styled-components';
 
 const LogoContainer = styled.div`
 display: flex;
-justify-content: center;
+padding-right:10rem;
 align-items: center;
 `
 
 const LogoImage = styled.img`
-height: 5rem;
+height: 3.75rem;
+padding: 2rem;
+justify-content: left;
 `
+const textLogo = styled.h1`
+    font-size:2rem;
+`
+
 function Logo (){
     return(
         <LogoContainer>
         <LogoImage src={logo} alt="logo" />
-        <p>Estação brownies</p>
+        <textLogo>Estação Brownies</textLogo>
         </LogoContainer>
     )
 }

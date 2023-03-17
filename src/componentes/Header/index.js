@@ -5,11 +5,11 @@ import styled from 'styled-components';
 
 const HeaderContainer = styled.header `
 
-    background-color: #282c34;
+    background-color: #62463E;
     min-height: 10vh;
     display: flex;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     padding-left: 2rem;
     align-items: center;
     justify-content: center;

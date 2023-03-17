@@ -1,23 +1,32 @@
-import profile from '../../imagens/profile.svg'
-import carrinho from '../../imagens/carrinho.svg'
+
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 const Icone = styled.li`
-padding-left:2rem;
+  font-size:2rem;
+  padding-left:2rem;
+  &:hover {
+    color:#f190b6;
+    transition:1s;
+    cursor:pointer;
+   }
+
 `
 const IconesFiguras = styled.ul`
      display: flex;
+     margin-left:10rem;
+
 `
 
-const icones = [profile, carrinho]
+
 
 function Icones(){
     return(
         <IconesFiguras>
-        {icones.map ((icone)=>(
-          <Icone><img className='icone' alt='icone' src='icone'></img></Icone>
-        ))}
-        
+            <Icone><FontAwesomeIcon icon={faUser} /></Icone>
+            <Icone><FontAwesomeIcon icon={faEnvelope} /></Icone>
     </IconesFiguras>
     )
 }

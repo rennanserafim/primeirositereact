@@ -6,15 +6,22 @@ font-size: 2rem;
 min-width: 10rem;
 justify-content: center;
 align-items: center;  
+padding-left: 2rem;
+text-decoration: none;
+&:hover {
+  color: #f190b6; 
+  transition:0.5s;
+  cursor:pointer;
+ }
 
 `
 
 const Opcoes = styled.li`
 display: flex;
-padding-left: 10rem;
+
 `
 
-const textoOpcoes = ['Categorias','Meus Produtos','Favoritos','Ranking']
+const textoOpcoes = ['Categorias','Meus Produtos','Favoritos']
 
 function OpcoesHeader(){
 return(
